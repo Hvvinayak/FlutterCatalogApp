@@ -7,14 +7,15 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catalog App"),
+        title: const Text("Catalog App"),
       ),
       body: Center(
+        // ignore: avoid_unnecessary_containers
         child: Container(
-          child: Text("Welcome to 30 days course"),
+          child: const Text("Welcome to 30 days course"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: const Drawer(),
     );
   }
 }
